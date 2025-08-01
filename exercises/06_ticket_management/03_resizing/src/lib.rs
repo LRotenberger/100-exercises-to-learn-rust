@@ -1,5 +1,7 @@
 #[cfg(test)]
 mod tests {
+    use std::usize::MAX;
+
     #[test]
     fn resizing() {
         let mut v = Vec::with_capacity(2);
@@ -12,6 +14,6 @@ mod tests {
         // Can you guess what the new capacity will be?
         // Beware that the standard library makes no guarantees about the
         // algorithm used to resize the vector, so this may change in the future.
-        assert_eq!(v.capacity(), todo!());
+        assert_eq!(v.capacity(), 4);
     }
 }
